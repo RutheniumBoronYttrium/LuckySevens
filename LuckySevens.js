@@ -33,4 +33,10 @@ function play() {
     document.getElementById("resultsRollsFromHighest").innerHTML = rollsFromHighest;
     };
 
+<<<<<<< HEAD
     showResults();}
+=======
+    showResults();
+} 
++
+>>>>>>> atom
