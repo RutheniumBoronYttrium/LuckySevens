@@ -1,6 +1,6 @@
 function hideResults() {
     document.getElementById("results").style.display = "none";
-} 
+}
 
 function play() {
     var startingBet = document.getElementById("betInput").value;
@@ -13,7 +13,7 @@ function play() {
     while (bet > 0) {
         if(diceRoll != 7) {
             bet -= 1
-        } else { 
+        } else {
             bet += 4
         }
         betsArray.push(bet)
@@ -23,7 +23,7 @@ function play() {
     var highestAmount = Math.max.apply(Math, betsArray);
     var highestPosition = betsArray.indexOf(highestAmount);
     var rollsFromHighest = rollCounter - highestPosition;
-    
+
     function showResults() {
     document.getElementById("results").style.display = "inline";
     document.getElementById("playButton").innerHTML = "Play Again";
@@ -33,5 +33,4 @@ function play() {
     document.getElementById("resultsRollsFromHighest").innerHTML = rollsFromHighest;
     };
 
-    showResults();
-} 
+    showResults();}
